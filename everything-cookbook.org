@@ -1,0 +1,72 @@
+* Emacs
+** configuration
+*** [[https://www.reddit.com/r/emacs/comments/1hlj04t/emacs_using_the_lucid_toolkit_is_blazingly_fast/][Emacs using the lucid toolkit is blazingly fast]] (reddit)
+  has list of configure options with chatgpt explanations
+** elisp
+*** auto tangle on save ([[https://youtu.be/9eEtPnTknhQ?t=409][EmacsConf 2024: Literate programming for the 21st Century - Howard Abrams (youtube)]])
+Add this code to the bottom of an org file
+#+begin_src emacs-lisp
+# Local Variables:
+# eval: (add-hook 'after-save-hook #'org-babel-tangle t t)
+# End:
+#+end_src
+* Git
+** [[https://www.reddit.com/r/git/comments/1inhc91/comment/mcdor8j/][Is it possible to store .git in a different directory?]]
+create a =.git= file whose contents are ~gitdir: /path/to/alternative/location~
+* Perl
+** Combinations & Permutations
+- [[https://metacpan.org/pod/Algorithm::Combinatorics][Algorithm::Combinatorics]]
+- [[https://metacpan.org/pod/Algorithm::Loops][Algorithm::Loops]]
+** Object::Pad
+*** new with a single arg
+#+begin_src perl
+class Foo {
+    # :reader so the value can be accessed from outside the class
+    # :param  so that `new(bar => ...)` works
+    field $bar :reader :param;
+
+    sub BUILDARGS {
+        # @_ = qw(Foo test)
+        my $class = shift;
+        return bar => $_[0];
+    }
+}
+
+my $f = Foo->new('test'); # same as `new(bar => 'test')`
+say $f->bar; # test
+#+end_src
+** max_by implementation
+#+begin_src perl
+sub max_by :prototype(&@) {
+    my $fn = shift;
+    return unless @_;
+
+    local $_;
+
+    my $maxobj = $_ = shift; # assume first object has the largest value
+    my $maxval = $fn->($_);
+
+    for (@_) {
+        my $val = $fn->($_);
+        if ($val > $maxval) {
+            $maxobj = $_;
+            $maxval = $val;
+        }
+    }
+
+    return $maxobj;
+}
+
+print max_by { $_->[0] } map { [$_] } qw/1 3 5 7 9 0 2 4 6 8/ # [9]
+#+end_src
+* linux
+** cli secrets manager
+[[https://github.com/getsops/sops][sops]] (github)
+* org
+** formatting
+*** ~*bold*~ *bold*
+*** ~~hi~~ ~code~
+*** ~/italic/~ /italic/
+*** ~+strike+~ +strike+
+*** ~_underline_~ _underline_
+*** ~=verbatim=~ =verbatim=
