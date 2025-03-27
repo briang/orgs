@@ -1,0 +1,107 @@
+Free Gamedev Tools
+[[https://gamefromscratch.com/awesome-free-game-development-tools/][A list by Games From Scratch]]
+
+* Game Engines
+
+** [[https://godotengine.org/][Godot Game Engine]]
+
+Use building blocks called nodes to create more complex and reusable scenes. Add
+scripts to your scenes and customize built-in behavior to implement your unique
+game mechanics. Rely on composition and node hierarchy to make game logic clear
+at a glance.
+
+** [[https://o3de.org/][O3DE]]
+
+Create captivating experiences with O3DE using a suite of tools developed for
+cutting-edge, real-time graphics, and complex interactions.
+
+* Art
+
+** [[https://www.blender.org/][Blender]]
+
+Blender is the free and open source 3D creation suite. It supports the entirety
+of the 3D pipeline—modeling, rigging, animation, simulation, rendering,
+compositing and motion tracking, even video editing and game asset creation.
+
+** [[https://www.stef.be/dpaint/][DPaint.js]]
+
+DPaint.js is a web based image editor modeled after the legendary Deluxe Paint.
+It's main purpose is to be used as a tool for creating pixel art, but it can
+also be used for general image editing.
+
+** [[https://www.gimp.org/][GIMP]]
+
+GIMP is the GNU Image Manipulation Program. It is a cross-platform image editor
+available for GNU/Linux, macOS, Windows and more operating systems. It is free
+software, you can change its source code and distribute your changes.
+
+Whether you are a graphic designer, photographer, illustrator, or scientist,
+GIMP provides you with sophisticated tools to get your job done. You can further
+enhance your productivity with GIMP thanks to many customization options and 3rd
+party plugins.
+
+** [[https://graphicsgale.com/us/][Graphics Gale]]
+
+An animation editor that's easy to use
+
+** [[https://krita.org/en/][Krita
+]]
+Krita is a professional FREE and open source painting program. It is made by
+artists that want to see affordable art tools for everyone.
+
+** [[https://ldtk.io/][LDtk]]
+
+Level Designer Toolkit is the core tool of my upcoming career as a solo dev. It
+is packed with all the things I learned while making games. LDtk is designed to
+be efficient, very user-friendly and gives good results quickly.
+
+** [[https://ephtracy.github.io/index.html?page=mv_main][MagicaVoxel]]
+
+A free lightweight GPU-based voxel art editor and interactive path tracing
+renderer.
+
+** [[https://www.materialmaker.org/][Material Maker]]
+
+Material Maker is a procedural materials authoring tool based on the Godot
+Engine.
+
+Materials are defined as graphs where nodes create or transform textures, and
+can be exported for the Godot, Unity and Unreal game engines.
+
+It can be used to create different kinds of materials, including static or
+dynamic PBR, or raymarching based.
+
+** [[https://orama-interactive.itch.io/pixelorama][Pixelorama]]
+
+Unleash your creativity with Pixelorama, a powerful and accessible open-source
+pixel art multitool. Whether you want to create sprites, tiles, animations, or
+just express yourself in the language of pixel art, this software will realize
+your pixel-perfect dreams with a vast toolbox of features.
+
+** [[https://stephaneginier.com/sculptgl/][SculptGL]]
+
+SculptGL is a digital sculpting program, available as a web app or as an
+installable app.
+
+** [[https://www.mapeditor.org/][Tiled]]
+
+Tiled is a 2D level editor that helps you develop the content of your game. Its
+primary feature is to edit tile maps of various forms, but it also supports free
+image placement as well as powerful ways to annotate your level with extra
+information used by the game. Tiled focuses on general flexibility while trying
+to stay intuitive.
+
+** [[https://extensions.blender.org/add-ons/ucupaint/][Ucupaint]]
+
+Ucupaint is a Blender addon to manage texture layers for the Eevee and Cycles
+renderers. Already in development for years, Ucupaint provides a lot of
+easy-to-use features while also being able to fit into your usual shader nodes
+workflow.
+
+* Sound
+
+** [[https://www.audacityteam.org/][Audacity]]
+
+Audacity is the world’s most popular free software for recording and editing
+audio. So if you're producing music, a podcast, or just playing around with
+audio, Audacity is for you.
