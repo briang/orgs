@@ -1,0 +1,131 @@
+* Git bash-completion
+
+   See the docs in the [[https://github.com/git/git/blob/master/contrib/completion/git-completion.bash][git repo]] for more.
+
+   __git_complete gg git
+
+* bash
+
+`stdbuf` can be used to turn off buffering: `stdbuf -o0 some-command` turns off
+STDOUT line buffering
+
+* Perl+emacs
+
+[[https://github.com/bscan/PerlNavigator][Perl Navigator Language Server]] on github
+
+* Free gamedev tools
+
+aseprite - pixel art tool with which you can create animated sprites & graphics
+audacity - open-source digital audio editor and recording software
+blender - open-source 3D graphics software for creating animation, modelling
+blockbench - low-poly 3D model editor
+figma - webapp for interface design
+gimp - open-source raster graphics editor
+imagemagick - Convert, Edit, or Compose Digital Images
+krita - open-source raster graphics editor for digital art and 2D animation
+libresprite - open source program for creating and animating sprites
+lmms - open source, multiplatform digital audio workstation
+material maker - procedural materials authoring and 3D model painting tool
+paint.net - free image and photo editing software
+pixelover - convert images, gifs or 3D models in pixel art and animate
+
+inkscape
+vectorpea
+photopea
+
+* Org
+
+** emphasis markers
+
+*bold*, /ital/, _underline_, =verbatim (code)=, ~strike~
+
+#+begin_quote
+org-hide-emphasis-markers is a variable defined in ‘org.el’.
+Its value is nil
+
+  This variable is safe as a file local variable if its value
+  satisfies the predicate ‘booleanp’.
+
+Documentation:
+Non-nil mean font-lock should hide the emphasis marker characters.
+
+#+begin_src elisp
+  (use-package org-appear
+    :config
+    (org-appear-mode)) ; untested!
+  (setq org-hide-emphasis-markers t)
+  (setq org-hide-emphasis-markers nil)
+#+end_src
+#+end_quote
+
+** Links
+
+[[url][text]] [[url] [text]] (remove space in middle)
+
+#+begin_src perl
+use strict;
+#+end_src
+
+#+begin_src elisp
+(require 'org-tempo) ; use `<q TAB` for quote block (etc)
+#+end_src
+
+#+begin_src python
+print("1+2 is " + "3")
+#+end_src
+
+* emacs
+
+- Temporary TOC for navigation using `consult`
+
+  [[https://www.youtube.com/watch?v=zqg-o_xb8dw][source]]
+
+  add
+
+  ;; -*- lexical-binding: t; eval: (local-set-key "C-c i") #'consult-outline); outline-regexp: ";;;"; -*-
+
+  at the top of a buffer.
+
+  Uses `consult-outline` to create a temporary toc in the minibuffer. Each
+  headline comes from a triple-semicolon headline. `C-c i` is bound to that
+  function ONLY in the current buffer.
+
+* Need to look at
+
+** perl
+
++ App::perl::distrolint
+  - distribution-wide linting tools for Perl distributions
++ assign
+  - Destructuring Assignment Syntax for Perl
++ builtins
+  - Install everything from the new `builtin` namespace
++ experimentals
+  - Experimental features made even easier
++ FunctionalPerl
+  - reduce side effects in your perl by using FP
++ Git::Lint
+  - lint git commits and messages
++ InlineX::C2XS
+  - Convert from Inline C code to XS
++ LINQ
+  - an interpretation of Microsoft's Language Integrated Query
++ Package::Stash{::XS}
+  - Manipulation of perl stashes in pure-perl or XS
++ Term::Graille
+  - Graphical display in the terminal using UTF8 Braille characters
++ Venus
+  - OO Standard Library for Perl 5
+
+** bash
+
++ replace =.bashrc.local/=
+
+Instead of =.bashrc.local= what about (eg) =.bashrc-dev-briang.local=. It can be
+gitted and programmed using (eg) =.bash-\${HOSTNAME}-\${USER}.local=
+
+* Misc
+
++ =x & -x= gives the highest power of 2 that divides =x=. For example =2040 &
+  -2040= is =8= because the factors of =2040= are =2^3, 3, 5, 17= . Or, =4352 &
+  -4352= is 256 because the factors of =4352= are =2^8, 17=.
