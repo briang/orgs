@@ -4,9 +4,10 @@
   has list of configure options with chatgpt explanations
 ** elisp
 *** auto tangle on save ([[https://youtu.be/9eEtPnTknhQ?t=409][EmacsConf 2024: Literate programming for the 21st Century - Howard Abrams (youtube)]])
-Add this code to the bottom of an org file
+Add this code to the bottom of an org file (the backslash is there to stop emacs
+from actioning the ~eval~ in *this* file)
 #+begin_src emacs-lisp
-# Local Variables:
+# Local \Variables:
 # eval: (add-hook 'after-save-hook #'org-babel-tangle t t)
 # End:
 #+end_src
