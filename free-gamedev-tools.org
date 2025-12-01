@@ -141,6 +141,11 @@ audio, Audacity is for you.
 
 * Video
 
+** [[https://www.blackmagicdesign.com/products/davinciresolve][Davinci Resolve]] - full featured video editing suite
+
+DaVinci Resolve combines editing, color correction, visual effects, motion
+graphics and audio post production all in one software tool!
+
 ** [[https://handbrake.fr/][HandBrake]] - Open Source Video Transcoder
 
 HandBrake is a open-source tool, built by volunteers, for converting video from
