@@ -1,5 +1,6 @@
 Free Gamedev Tools
-[[https://gamefromscratch.com/awesome-free-game-development-tools/][A list by Games From Scratch]]
+[[https://gamefromscratch.com/awesome-free-game-development-tools/][
+A list by Games From Scratch]]
 
 * Game Engines
 
@@ -15,7 +16,32 @@ at a glance.
 Create captivating experiences with O3DE using a suite of tools developed for
 cutting-edge, real-time graphics, and complex interactions.
 
+** [[https://www.raylib.com/][raylib]] - an easy-to-use library to enjoy videogames programming
+
+A cross-platform and bare-bones game engine written in C. Bindings exist for 60+
+programming languages (including Perl).
+
 * Art
+
+** [[https://www.affinity.studio/][Affinity Studio]] - Adobe Creative Suite killer?
+
+Three-in-one alternative to Adobe's "big three":
+
+- Pixel - Photoshop
+- Layout - InDesign
+- Vector - Illustrator
+
+** [[https://www.aseprite.org/][aseprite]] - Animated Sprite Editor
+
+Aseprite lets you create 2D animations for videogames. From sprites, to
+pixel-art, retro style graphics, and whatever you like about the 8-bit and
+16-bit eras.
+
+Available as paid version ($20), a free trial, or free if compiled from
+[[https://github.com/aseprite/aseprite/][source]] [github]
+
+see also
+- libresprite
 
 ** [[https://www.blender.org/][Blender]]
 
@@ -54,6 +80,13 @@ artists that want to see affordable art tools for everyone.
 Level Designer Toolkit is the core tool of my upcoming career as a solo dev. It
 is packed with all the things I learned while making games. LDtk is designed to
 be efficient, very user-friendly and gives good results quickly.
+
+** [[https://github.com/LibreSprite][libresprite]] - Animated sprite editor & pixel art tool
+
+Fork of the last GPLv2 commit of Aseprite
+
+See alse
+- aseprite
 
 ** [[https://ephtracy.github.io/index.html?page=mv_main][MagicaVoxel]]
 
@@ -105,3 +138,10 @@ workflow.
 Audacity is the world’s most popular free software for recording and editing
 audio. So if you're producing music, a podcast, or just playing around with
 audio, Audacity is for you.
+
+* Video
+
+** [[https://handbrake.fr/][HandBrake]] - Open Source Video Transcoder
+
+HandBrake is a open-source tool, built by volunteers, for converting video from
+nearly any format to a selection of modern, widely supported codecs.
