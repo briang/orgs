@@ -1,9 +1,11 @@
 * Emacs
 ** configuration
-*** [[https://www.reddit.com/r/emacs/comments/1hlj04t/emacs_using_the_lucid_toolkit_is_blazingly_fast/][Emacs using the lucid toolkit is blazingly fast]] (reddit)
-  has list of configure options with chatgpt explanations
 *** [[https://lists.nongnu.org/archive/html/help-gnu-emacs/2025-03/msg00204.html][automatically bisecting init.el]] (help-gnu-emacs mailing list)
 (tldr) [[https://github.com/Malabarba/elisp-bug-hunter>][bug-hunter]] also available on GNU ELPA
+*** [[https://www.reddit.com/r/emacs/comments/1hlj04t/emacs_using_the_lucid_toolkit_is_blazingly_fast/][Emacs using the lucid toolkit is blazingly fast]] (reddit)
+  has list of configure options with chatgpt explanations
+*** dotemacs
+- [[https://github.com/jamescherti/minimal-emacs.d][minimal-emacs]]
 ** elisp
 *** auto tangle on save ([[https://youtu.be/9eEtPnTknhQ?t=409][EmacsConf 2024: Literate programming for the 21st Century - Howard Abrams (youtube)]])
 Add this code to the bottom of an org file (the backslash is there to stop emacs
