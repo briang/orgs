@@ -73,6 +73,15 @@ curl -L https://install.perlbrew.pl | bash
 * linux
 ** cli secrets manager
 [[https://github.com/getsops/sops][sops]] (github)
+* Networking
+** What's my IP public address
+Sources: [[https://askubuntu.com/questions/95910/command-for-determining-my-public-ip][askubuntu]], [[url][text]
+- ~dig +short myip.opendns.com @resolver1.opendns.com~
+- ~curl https://ipinfo.io/ip~
+- ~curl https://ipecho.net/plain~
+- ~curl ifconfig.me~
+- ~wget -qO- icanhazip.com~ or ~curl icanhazip.com~
+- ~curl https://checkip.amazonaws.com~ URL also works in browser
 * org
 ** formatting
 *** ~*bold*~ *bold*
