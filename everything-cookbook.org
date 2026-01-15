@@ -22,23 +22,10 @@ create a =.git= file whose contents are ~gitdir: /path/to/alternative/location~
 ** Combinations & Permutations
 - [[https://metacpan.org/pod/Algorithm::Combinatorics][Algorithm::Combinatorics]]
 - [[https://metacpan.org/pod/Algorithm::Loops][Algorithm::Loops]]
-** Object::Pad
-*** new with a single arg
-#+begin_src perl
-class Foo {
-    # :reader so the value can be accessed from outside the class
-    # :param  so that `new(bar => ...)` works
-    field $bar :reader :param;
-
-    sub BUILDARGS {
-        # @_ = qw(Foo test)
-        my $class = shift;
-        return bar => $_[0];
-    }
-}
-
-my $f = Foo->new('test'); # same as `new(bar => 'test')`
-say $f->bar; # test
+** Installing perlbrew anywhere
+#+begin_src bash
+export PERLBREW_ROOT=/path/to/anywhere
+curl -L https://install.perlbrew.pl | bash
 #+end_src
 ** max_by implementation
 #+begin_src perl
@@ -64,12 +51,24 @@ sub max_by :prototype(&@) {
 
 print max_by { $_->[0] } map { [$_] } qw/1 3 5 7 9 0 2 4 6 8/ # [9]
 #+end_src
-** Installing perlbrew anywhere
-#+begin_src bash
-export PERLBREW_ROOT=/path/to/anywhere
-curl -L https://install.perlbrew.pl | bash
-#+end_src
+** Object::Pad
+*** new with a single arg
+#+begin_src perl
+class Foo {
+    # :reader so the value can be accessed from outside the class
+    # :param  so that `new(bar => ...)` works
+    field $bar :reader :param;
 
+    sub BUILDARGS {
+        # @_ = qw(Foo test)
+        my $class = shift;
+        return bar => $_[0];
+    }
+}
+
+my $f = Foo->new('test'); # same as `new(bar => 'test')`
+say $f->bar; # test
+#+end_src
 * linux
 ** cli secrets manager
 [[https://github.com/getsops/sops][sops]] (github)
