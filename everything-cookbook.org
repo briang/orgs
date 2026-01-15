@@ -73,6 +73,7 @@ curl -L https://install.perlbrew.pl | bash
 * linux
 ** cli secrets manager
 [[https://github.com/getsops/sops][sops]] (github)
+** certbot - automatically configure HTTPS using Let's Encrypt
 * Networking
 ** What's my IP public address
 Sources: [[https://askubuntu.com/questions/95910/command-for-determining-my-public-ip][askubuntu]], [[url][text]
