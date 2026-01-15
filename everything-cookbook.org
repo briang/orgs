@@ -18,6 +18,27 @@ from actioning the ~eval~ in *this* file)
 * Git
 ** [[https://www.reddit.com/r/git/comments/1inhc91/comment/mcdor8j/][Is it possible to store .git in a different directory?]]
 create a =.git= file whose contents are ~gitdir: /path/to/alternative/location~
+* linux
+** certbot - automatically configure HTTPS using Let's Encrypt
+** cli secrets manager
+[[https://github.com/getsops/sops][sops]] (github)
+* Networking
+** What's my IP public address
+Sources: [[https://askubuntu.com/questions/95910/command-for-determining-my-public-ip][askubuntu]], [[url][text]
+- ~dig +short myip.opendns.com @resolver1.opendns.com~
+- ~curl https://ipinfo.io/ip~
+- ~curl https://ipecho.net/plain~
+- ~curl ifconfig.me~
+- ~wget -qO- icanhazip.com~ or ~curl icanhazip.com~
+- ~curl https://checkip.amazonaws.com~ URL also works in browser
+* org
+** formatting
+*** ~*bold*~ *bold*
+*** ~~hi~~ ~code~
+*** ~/italic/~ /italic/
+*** ~+strike+~ +strike+
+*** ~_underline_~ _underline_
+*** ~=verbatim=~ =verbatim=
 * Perl
 ** Combinations & Permutations
 - [[https://metacpan.org/pod/Algorithm::Combinatorics][Algorithm::Combinatorics]]
@@ -69,24 +90,3 @@ class Foo {
 my $f = Foo->new('test'); # same as `new(bar => 'test')`
 say $f->bar; # test
 #+end_src
-* linux
-** certbot - automatically configure HTTPS using Let's Encrypt
-** cli secrets manager
-[[https://github.com/getsops/sops][sops]] (github)
-* Networking
-** What's my IP public address
-Sources: [[https://askubuntu.com/questions/95910/command-for-determining-my-public-ip][askubuntu]], [[url][text]
-- ~dig +short myip.opendns.com @resolver1.opendns.com~
-- ~curl https://ipinfo.io/ip~
-- ~curl https://ipecho.net/plain~
-- ~curl ifconfig.me~
-- ~wget -qO- icanhazip.com~ or ~curl icanhazip.com~
-- ~curl https://checkip.amazonaws.com~ URL also works in browser
-* org
-** formatting
-*** ~*bold*~ *bold*
-*** ~~hi~~ ~code~
-*** ~/italic/~ /italic/
-*** ~+strike+~ +strike+
-*** ~_underline_~ _underline_
-*** ~=verbatim=~ =verbatim=
