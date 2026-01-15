@@ -48,6 +48,8 @@ Sources: [[https://askubuntu.com/questions/95910/command-for-determining-my-publ
 export PERLBREW_ROOT=/path/to/anywhere
 curl -L https://install.perlbrew.pl | bash
 #+end_src
+** Language Features
+- s//r introduced in 5.14
 ** max_by implementation
 #+begin_src perl
 sub max_by :prototype(&@) {
