@@ -6,6 +6,12 @@
   has list of configure options with chatgpt explanations
 *** dotemacs
 - [[https://github.com/jamescherti/minimal-emacs.d][minimal-emacs]]
+*** Remove title bar when frame is maximized
+Not sure if this is useful. [[https://www.reddit.com/r/emacs/comments/1qcylm3/comment/nzltle2?][Source]]
+#+begin_src emacs-lisp
+(add-hook 'window-size-change-functions
+          'frame-hide-title-bar-when-maximized)
+#+end_src
 ** elisp
 *** auto tangle on save ([[https://youtu.be/9eEtPnTknhQ?t=409][EmacsConf 2024: Literate programming for the 21st Century - Howard Abrams (youtube)]])
 Add this code to the bottom of an org file (the backslash is there to stop emacs
