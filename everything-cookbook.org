@@ -81,6 +81,28 @@ sub max_by :prototype(&@) {
 print max_by { $_->[0] } map { [$_] } qw/1 3 5 7 9 0 2 4 6 8/ # [9]
 #+end_src
 ** Object::Pad
+*** create new object from existing object using MOP
+Creates a copy of the SpaceGame::Planet object. Additionally, may be called with
+key => value pairs that are valid for the class's `new` method with the new
+values updating the copied values. For example
+
+#+begin_src perl
+# create a planet
+$p1 = SpaceGame::Planet->new(name=>'planet', x=>0, y=>0);
+# create a copy of the planet, but with a different name
+$p2 = $p1->copy(name=>'pluto'); # x, y unchanged
+
+method copy(%args) {
+    my $metaclass = Object::Pad::MOP::Class->for_class( ref $self );
+    my %new;
+    for my $field ($metaclass->fields) {
+        my $unsigiled = substr $field->name, 1;
+        $new{$unsigiled} = $args{$unsigiled} // $field->value($self);
+    }
+
+    return SpaceGame::Planet->new(%new);
+}
+#+end_src
 *** new with a single arg
 #+begin_src perl
 class Foo {
