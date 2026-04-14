@@ -120,3 +120,5 @@ class Foo {
 my $f = Foo->new('test'); # same as `new(bar => 'test')`
 say $f->bar; # test
 #+end_src
+** XS
+*** [[https://dev.to/lnationorg/learning-perl-xs-how-to-create-an-object-24lj][LNATION's tutorial series]]
