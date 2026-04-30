@@ -1,0 +1,5 @@
+* Interesting Perl modules
+- [[https://metacpan.org/dist/App-prepare4release][prepare4release - prepare a Perl module directory for release]]
+- [[https://metacpan.org/dist/CPAN-Maker][CPAN::Maker]] and [[https://metacpan.org/dist/CPAN-Maker-Bootstrapper][CPAN::Maker::Bootstrapper]]
+* Interesting Elisp programs
+- [[https://www.reddit.com/r/emacs/comments/1sp1wly/launching_a_new_grammarspell_checking_tool_for/][ltex - grammar checking for Emacs]]
