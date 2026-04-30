@@ -24,7 +24,7 @@ from actioning the ~eval~ in *this* file)
 * Git
 ** [[https://www.reddit.com/r/git/comments/1inhc91/comment/mcdor8j/][Is it possible to store .git in a different directory?]]
 create a =.git= file whose contents are ~gitdir: /path/to/alternative/location~
-* linux
+* Linux
 ** certbot - automatically configure HTTPS using Let's Encrypt
 ** cli secrets manager
 [[https://github.com/getsops/sops][sops]] (github)
@@ -37,7 +37,7 @@ Sources: [[https://askubuntu.com/questions/95910/command-for-determining-my-publ
 - ~curl ifconfig.me~
 - ~wget -qO- icanhazip.com~ or ~curl icanhazip.com~
 - ~curl https://checkip.amazonaws.com~ URL also works in browser
-* org
+* Org
 ** formatting
 *** ~*bold*~ *bold*
 *** ~~hi~~ ~code~
