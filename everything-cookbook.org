@@ -49,6 +49,8 @@ Sources: [[https://askubuntu.com/questions/95910/command-for-determining-my-publ
 ** Combinations & Permutations
 - [[https://metacpan.org/pod/Algorithm::Combinatorics][Algorithm::Combinatorics]]
 - [[https://metacpan.org/pod/Algorithm::Loops][Algorithm::Loops]]
+** CPAN upload on push discussion
+https://www.reddit.com/r/perl/comments/1t42ba6/comment/ojzzyua/
 ** Installing perlbrew anywhere
 #+begin_src bash
 export PERLBREW_ROOT=/path/to/anywhere
