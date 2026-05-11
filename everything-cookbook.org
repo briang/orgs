@@ -1,3 +1,7 @@
+* Bash
+** Command Completion
+*** Frameworks
+- Checkout [[https://carapace.sh/][Carapace]] (untested)
 * Emacs
 ** Compiling Emacs for Performance on Linux
 https://www.jamescherti.com/compiling-emacs/ see also [[https://www.reddit.com/r/emacs/comments/1ta1uqq/compiling_emacs_for_high_performance_on_linux_and/][discussion]] on reddit
