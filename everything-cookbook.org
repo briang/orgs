@@ -1,4 +1,6 @@
 * Emacs
+** Compiling Emacs for Performance on Linux
+https://www.jamescherti.com/compiling-emacs/ see also [[https://www.reddit.com/r/emacs/comments/1ta1uqq/compiling_emacs_for_high_performance_on_linux_and/][discussion]] on reddit
 ** configuration
 *** [[https://lists.nongnu.org/archive/html/help-gnu-emacs/2025-03/msg00204.html][automatically bisecting init.el]] (help-gnu-emacs mailing list)
 (tldr) [[https://github.com/Malabarba/elisp-bug-hunter>][bug-hunter]] also available on GNU ELPA
